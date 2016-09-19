@@ -1,0 +1,236 @@
+body { 
+  font-family: $apex;
+  color: $cod_gray_approx;
+  //max-width: 1456px;
+  //margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+  font-family: $dosis;
+}
+
+h1 { 
+  font-family: $dosis;
+  font-weight: 400;
+  font-size: 72px;
+  letter-spacing: .5px;
+  line-height: 79px;
+}
+h2 { 
+  font-family: $dosis;
+  font-weight: 500;
+  font-size: 64px;
+  letter-spacing: 5.8px;
+  line-height: 46px;
+}
+p { 
+  font-size: 24px;
+  font-weight: 200;
+  font-family: $apex;
+  letter-spacing: 0.66px;
+  line-height: 40px;
+}
+
+h1, h2 { 
+  display: inline-block;
+  margin-bottom: 30px;
+  .double-lines {
+    line-height: 9px;
+    margin-top: 30px;
+    div { 
+      display: inline-block;
+      height: 3px; 
+      background-color: $white;
+      border-radius: 3px;
+      margin-bottom: 4px;
+      vertical-align: top;
+      line-height: 3px;
+      //display: block;
+      &:nth-child(odd) {  
+        width: 19px;
+        margin-right: 6px;
+        float: left;
+      }
+      &:nth-child(even) {
+        width: calc(94% - 25px);
+      }
+    }
+  }
+}
+
+.logo { 
+  margin-top: 70px;
+}
+.down-arrow { 
+  margin-bottom: 20px;
+}
+
+@include media-breakpoint-down(md) { 
+  /*
+  .small-bg-opacity:before { 
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  */
+}
+
+.whitebg { 
+  background-color: $white;
+  color: $mine_shaft_approx;
+  .double-lines > div { 
+    background-color: $mine_shaft_approx;
+  }
+}
+
+.redbg { 
+ background-color: $sunset_orange_approx;
+ color: $white;
+}
+
+.digital-eqaulity { 
+  background-image:url('../digital-bg.png');
+  background-repeat:no-repeat;
+  background-position: top right;
+  @include media-breakpoint-up(xl) { 
+    height: 909px;
+    //1027px when using the full image
+  }
+  h1 { 
+    margin-top: 228px;
+  }
+  p { 
+    margin-bottom: 83px;
+  }
+}
+.our-mission { 
+  display: inline-block;
+  font-size: 24px;
+  max-width: 107px;
+  position: relative;
+  margin-right: 19px;
+  float: left;
+  div { 
+    display: inline-block;
+    width: 3px; 
+    height: 34px;
+    background-color: $white;
+    border-radius: 3px;
+    vertical-align: top;
+    position: absolute;
+    right: 0px;
+    &:nth-child(1) { 
+      top: -5px;
+    }
+    &:nth-child(2) { 
+      top: 35px;
+    }
+  }
+  + p  {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-bottom: 0;
+    width: calc(100% - 126px);
+    font-weight: 500;
+    font-style: italic;
+    line-height: 35px;
+  }
+  &.dark-lines { 
+    div { 
+      background-color: $mine_shaft_approx;
+    }
+  }
+}
+.grid-bg { 
+  background-image:url('../grid-bg.png');
+  background-repeat:no-repeat;
+  position: absolute;
+  width: 100%; 
+  height: 1855px;
+  background-position: center top;
+}
+.access-and-skills  {
+  position: relative;
+  overflow: hidden;
+}
+
+.access { 
+  @include media-breakpoint-up(xl) { 
+    height: 1017px;
+    margin-bottom: 422px;
+  }
+  h1 { 
+    margin-top: -36px;
+  }
+  p { 
+    font-size: 28px;
+  }
+}
+
+.skills { 
+  background-image:url('../skills-bg.png');
+  background-repeat:no-repeat;
+  background-position: top left;
+  @include media-breakpoint-up(xl) { 
+    height: 918px;
+  }
+  p { 
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+.leaders { 
+  background-image:url('../leaders-bg.png');
+  background-repeat:no-repeat;
+  background-position: top right;
+  @include media-breakpoint-up(xl) { 
+    height: 918px;
+  }
+  h2 { 
+    margin-top: 400px;
+  }
+  p { 
+    font-size: 24px;
+  }
+  margin-bottom: 164px;
+}
+
+.footer { 
+  .life-is-weird { 
+    margin-bottom: 20px;
+  }
+  .footer-logo { 
+    margin-bottom: 32px;
+  }
+  .about-info {
+    max-width: 484px;
+    margin: 0 auto 160px;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 0.18px;
+    line-height: 36px;
+
+  }
+  .contact { 
+    font-family: $dosis;
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .copyright {
+    font-family: $dosis;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1.71px;
+  }
+}

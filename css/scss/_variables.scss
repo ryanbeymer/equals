@@ -1,0 +1,19 @@
+//bootstrap overiddes
+$enable-flex: true;
+
+$dosis: 'Dosis', sans-serif;
+$apex: 'ApexNew', sans-serif;
+
+$sunset_orange_approx: #FF4949;
+$mine_shaft_approx: #303030;
+$cod_gray_approx: #1A1A1A;
+$white: #FFFFFF;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1395px
+);
+
+//color abstraction
